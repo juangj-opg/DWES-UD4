@@ -25,7 +25,12 @@
         $Arr = str_getcsv($linea);
         echo "<tr>";
         foreach ($Arr as $V) {
-            echo "<td>$V</td>";
+            if(str_starts_with($V," ")){
+                echo ", $V</td>";
+            } else{
+                echo "<td>$V";
+            }
+            
         }
         echo "</tr>";
       }

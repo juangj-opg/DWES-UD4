@@ -35,9 +35,13 @@
     echo "</table>";
     fclose($file);
 
+
     // Abrir el fichero en modo escritura y añadimos un nuevo nombre
     $file = fopen("./locations.csv", "a");
-    fwrite($file, PHP_EOL.'Giralda,"37.3862,-5.9926"');
+    /*fwrite($file, PHP_EOL.'Giralda,"37.3862,-5.9926"');  Es una forma de hacerlo al estilo txt */
+    $Arr[0] = "Giralda";
+    $Arr[1] = '37.3862,-5.9926';
+    fputcsv($file,$Arr);
     fclose($file);
 ?>
 </body>

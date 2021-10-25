@@ -143,7 +143,7 @@ if ($error!= null) {
         echo 'Fallo en la consulta';
     } else{
         $contador = 0;
-        echo '<h3>Mostramos la tabla buscando el Origen Málaga</h3>';
+        echo '<h3>Mostramos la tabla buscando el Origen Cádiz</h3>';
         echo '<table>';
         echo '<tr bgcolor="#CCFFCC">';
         echo '<th>ID</th>';

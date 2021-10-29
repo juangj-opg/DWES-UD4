@@ -60,7 +60,7 @@ try {
     
     // Comprobamos el ID de cada uno si es mayor de 0, en caso que sea menor de 0, no se realizará el commit
 
-    if ($ID1 > 0 && $ID2 > 0 && $ID3 > 0) {
+    if ($ID1 > 0 && $ID2 > 0 && $ID3 > 0 && $ID1 != $ID2 && $ID1 != $ID3 && $ID2 != $ID3  ) {
         $conexion -> commit();
     } else {
         $conexion -> rollback();

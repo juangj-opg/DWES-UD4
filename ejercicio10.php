@@ -9,7 +9,14 @@
 <!-- Estilos usados para el Ejercicio 10 -->
 <link rel="stylesheet" href="Ej10-style.css">
 <body>
-<div id="barragris"></div>
+<div id="barragris">
+    <div id="izq">
+        <a href="./ejercicio9.php"><b>< < Ejercicio 9</b></a>
+    </div>
+    <div id="der">
+        <a href="./ejercicio11.php"><b>Ejercicio 11 > ></b></a>
+    </div>
+</div>
 <div id="cabecerapadre">
  <div id="cabecerahijo">
     <h1 id="titulo">Ejercicio 10</h1>
@@ -45,6 +52,8 @@ try {
     echo "<p>Se insertará tres filas pertenecientes a la misma familia.</p>";
 
     // Se realiza los 3 querys de insercción de la familia
+    
+    
     $ID1 = InsertaFila($conexion, 'Juan', 'Garrido', 'Jiménez', 'Sevilla', '634323232');
     $ID2 = InsertaFila($conexion, 'Guillermo', 'Garrido', 'Jiménez', 'Sevilla', '643343434');
     $ID3 = InsertaFila($conexion, 'Guillermo', 'Garrido', 'Pérez', 'Sevilla', '753323534');
@@ -56,8 +65,7 @@ try {
     } else {
         $conexion -> rollback();
     }
-
-
+    
     echo "<h3>Mostramos la tabla, si hay un fallo (como que el ID es menor que 0), no se habrá añadido, pero, si está bien, se ejecutará.</h3>";
     MuestraTabla($conexion);
 

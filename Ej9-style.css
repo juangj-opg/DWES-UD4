@@ -25,7 +25,27 @@ html, body, div, h1{
     background-color: rgb(200,200,200);
     z-index: 0;
 }
+#izq{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    float: left;
+    justify-content: left;
+}
 
+#der{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    float: right;
+    justify-content: right;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 #contenedor{
     text-align: center;
     justify-content: center;

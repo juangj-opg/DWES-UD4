@@ -9,7 +9,14 @@
 <!-- Estilos usados para el Ejercicio 9 -->
 <link rel="stylesheet" href="Ej9-style.css">
 <body>
-<div id="barragris"></div>
+<div id="barragris">
+    <div id="izq">
+        <a href="./ejercicio8.php"><b>< < Ejercicio 8</b></a>
+    </div>
+    <div id="der">
+        <a href="./ejercicio10.php"><b>Ejercicio 10 > ></b></a>
+    </div>
+</div>
 <div id="cabecerapadre">
  <div id="cabecerahijo">
     <h1 id="titulo">Ejercicio 9</h1>

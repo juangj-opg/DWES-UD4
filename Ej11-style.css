@@ -1,0 +1,106 @@
+html, body, div, h1{
+    padding: 0;
+    margin: 0;
+}
+#cabecerapadre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cabecerahijo{
+    background-color: rgb(200,200,200);
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 0 0 15px 15px;
+    width: 400px;
+    z-index: 100;
+}
+#barragris{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(200,200,200);
+    z-index: 0;    
+    align-items: center;
+}
+
+#izq{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    float: left;
+    justify-content: left;
+}
+
+#der{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    float: right;
+    justify-content: right;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#contenedor{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+td, th{
+    width: 150px;
+    padding: 0;
+    border: 0;
+    
+}
+
+table tr:last-child td:last-child {
+border-radius: 0 0 15px 0 ;
+}
+
+table tr:last-child td:first-child {
+border-radius: 0 0 0 15px ;
+}
+
+table th:first-child {
+border-radius: 15px 0 0 0 ;
+}
+
+table th:last-child {
+border-radius:0 15px 0 0 ;
+}
+
+td:hover{
+    background-color: rgba(120,120,120,0.5);
+}
+
+tr#r1{
+    background-color: #FFCCCC;
+}
+
+tr#r1:hover{
+    background-color: rgba(255,150,150,0.9);
+    font-weight:bold;
+    
+}
+
+tr#r2{
+    background-color: #CCCCFF;
+}
+
+tr#r2:hover{
+    background-color: rgba(150,150,255,0.9);
+    font-weight:bold;
+}
